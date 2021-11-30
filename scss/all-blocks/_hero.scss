@@ -1,0 +1,55 @@
+.award {
+    padding-bottom: 160px;
+    .award-box {
+        position: relative;
+        padding: 145px 476px 145px 95px;
+        background: #e7816b;
+        border-radius: 15px;
+        z-index: 10;
+    }
+
+    .award__header {
+        margin: 0;
+        margin-bottom: 11px;
+        max-width: 530px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        color: #ffffff;
+    }
+
+    .award__text {
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+
+    .award__img {
+        display: inline-block;
+        position: absolute;
+        top: 120px;
+        right: 100px;
+        width: 279px;
+        height: 573px;
+        background-image: url("../../img/awar-phone.png");
+        background-repeat: no-repeat;
+    }
+
+    .award__oval {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 640px;
+        height: 640px;
+        z-index: -1;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+        mix-blend-mode: normal;
+        opacity: 0.31;
+        transform: matrix(0, -1, -1, 0, 0, 0);
+    }
+}

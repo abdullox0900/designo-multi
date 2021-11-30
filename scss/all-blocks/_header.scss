@@ -1,0 +1,134 @@
+.header {
+    padding: 64px 0px;
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        width: 196px;
+        height: 24px;
+        display: block;
+    }
+
+    .header-logo:hover {
+        opacity: 0.8;
+    }
+
+    .header-logo:hover {
+        opacity: 0.6;
+    }
+
+    .header__nav {
+        white-space: nowrap;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 42px;
+    }
+
+    .nav__link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #333136;
+    }
+
+    .nav__link:hover {
+        text-decoration-line: underline;
+    }
+
+    .nav__link:active {
+        opacity: 0.6;
+    }
+
+    .burger-btn {
+        display: none;
+        width: 24px;
+        height: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        background-image: url("../../img/header-burger.svg");
+    }
+
+    .burger-btn:hover {
+        opacity: 0.8;
+    }
+
+    .burger-btn:active {
+        opacity: 0.6;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        .header-logo {
+            width: 202px;
+            height: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .header {
+        position: relative;
+        .header__nav {
+            display: none;
+        }
+
+        .burger-btn {
+            display: inline-block;
+        }
+    }
+
+    .header--open .header__nav {
+        display: flex;
+        justify-content: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+        background: #1d1c1e;
+    }
+
+    .header--open .nav__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header--open .nav__item {
+        margin-left: 0px;
+        margin-bottom: 32px;
+    }
+
+    .header--open .nav__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .header--open .nav__item + .nav__item {
+        margin-left: 0px;
+    }
+
+    .header--open .nav__link {
+        color: #ffffff;
+    }
+
+    .header--open .burger-btn {
+        width: 20px;
+        height: 20px;
+        background-image: url("../../img/header-birger-x.svg");
+        background-repeat: no-repeat;
+    }
+}
