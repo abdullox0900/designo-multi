@@ -1,0 +1,144 @@
+.gallery {
+    padding-bottom: 160px;
+    .gallery-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // GALLERY-LINKS===========
+    .gallery__link {
+        position: relative;
+        padding: 273px 136px;
+        text-decoration: none;
+    }
+
+    .gallery__link2 {
+        position: relative;
+        padding: 107px 145px;
+        text-decoration: none;
+    }
+
+    .gallery__link2:nth-child(2) {
+        padding: 107px 90px;
+    }
+
+    .gallery__header {
+        margin: 0;
+        margin-bottom: 24px;
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+
+    .gallery__desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .gallery__desc::after {
+        content: "";
+        width: 4px;
+        height: 8px;
+        margin-left: 19px;
+        background-image: url("../../img/path.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .gallery__link-web {
+        width: 540px;
+        height: 650px;
+        border-radius: 15px;
+        background-image: url("../../img/web-designo-bg.jpg");
+        background-size: cover;
+    }
+
+    .gallery__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery__link--app {
+        width: 541px;
+        height: 310px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        background-image: url("../../img/app-deigno-bg.jpg");
+        background-size: cover;
+    }
+
+    .gallery__link-grap {
+        width: 541px;
+        height: 310px;
+        border-radius: 15px;
+        background-image: url("../../img/graphic-designo-bg.jpg");
+        background-size: cover;
+    }
+
+    // HOVER OVERLANE===========
+    .gallery__img-overlane {
+        position: absolute;
+        padding: 273px 141px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        border-radius: 15px;
+        background: rgba(231, 130, 107, 0.8);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .gallery__img-overlane:hover {
+        opacity: 1;
+    }
+
+    .gallery__img-overlane2 {
+        position: absolute;
+        padding: 107px 150px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        border-radius: 15px;
+        background: rgba(231, 130, 107, 0.8);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .gallery__img-overlane2:hover {
+        opacity: 1;
+    }
+
+    .gallery__img-overlane3 {
+        position: absolute;
+        padding: 107px 95px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        border-radius: 15px;
+        background: rgba(231, 130, 107, 0.8);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .gallery__img-overlane3:hover {
+        opacity: 1;
+    }
+}

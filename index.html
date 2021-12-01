@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/oval-logo.svg">
     <link rel="stylesheet" href="./css/main.css">
     <title>Designo Multi</title>
 </head>
@@ -37,22 +38,67 @@
 
     <!-- MAIN -->
     <main class="main">
+
+        <!-- AWARD -->
         <section class="award">
             <div class="container">
                 <div class="award-box">
-                    <h1 class="award__header">
-                        Award-winning custom <br> designs and digital <br> branding solutions
-                    </h1>
-                    <p class="award__text">
-                        With over 10 years in the industry, we are experienced in creating fully responsive websites,
-                        app design, and engaging brand experiences. Find out more about our services.
-                    </p>
-                    <button class="button">Learn More</button>
-                    <div class="award__img"></div>
-                    <span class="award__oval"></span>
+                    <div class="award-box__wrap">
+                        <h1 class="award__header">
+                            Award-winning custom <br> designs and digital <br> branding solutions
+                        </h1>
+                        <p class="award__text">
+                            With over 10 years in the industry, we are experienced in creating fully responsive
+                            websites,
+                            app design, and engaging brand experiences. Find out more about our services.
+                        </p>
+                        <button class="button">Learn More</button>
+                    </div>
+                    <picture>
+                        <source srcset="./img/hero-mobile-img.png 1x, ./img/hero-mobile-img@2x.png 2x"
+                            media="(max-width: 980px)">
+                        <img class="award__img" src="./img/hero-img-phone.png"
+                            srcset="./img/hero-img-phone.png 1x, ./img/hero-img-phone@2x.png 2x" alt="img-phone">
+                    </picture>
+
+                    <!-- <span class="award__oval"></span> -->
                 </div>
             </div>
         </section>
+
+        <!-- GALLERY -->
+        <section class="gallery">
+            <div class="container gallery-container">
+                <a href="#" class="gallery__link gallery__link-web">
+                    <div class="gallery__img-overlane">
+                        <h2 class="gallery__header">WEB DESIGN</h2>
+                        <p class="gallery__desc">VIEW PROJECTS</p>
+                    </div>
+                    <h2 class="gallery__header">WEB DESIGN</h2>
+                    <p class="gallery__desc">VIEW PROJECTS</p>
+                </a>
+                <div class="gallery__block">
+                    <a href="#" class="gallery__link2 gallery__link--app">
+                        <div class="gallery__img-overlane2">
+                            <h2 class="gallery__header">APP DESIGN</h2>
+                            <p class="gallery__desc">VIEW PROJECTS</p>
+                        </div>
+                        <h2 class="gallery__header">APP DESIGN</h2>
+                        <p class="gallery__desc">VIEW PROJECTS</p>
+                    </a>
+                    <a href="#" class="gallery__link2 gallery__link-grap">
+                        <div class="gallery__img-overlane3">
+                            <h2 class="gallery__header">GRAPHIC DESIGN</h2>
+                            <p class="gallery__desc">VIEW PROJECTS</p>
+                        </div>
+                        <h2 class="gallery__header">GRAPHIC DESIGN</h2>
+                        <p class="gallery__desc">VIEW PROJECTS</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- FOOTER -->
