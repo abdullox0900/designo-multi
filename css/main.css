@@ -443,7 +443,7 @@ img {
   opacity: 0.8;
 }
 
-.header .header-logo:hover {
+.header .header-logo:active {
   opacity: 0.6;
 }
 
@@ -471,6 +471,8 @@ img {
   letter-spacing: 2px;
   text-decoration: none;
   color: #333136;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .header .nav__link:hover {
@@ -686,8 +688,48 @@ img {
 }
 
 .footer {
+  position: relative;
   padding: 144px 0px 72px 0px;
   background: #1d1c1e;
+}
+
+.footer .footer-talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: -200px;
+  width: 1111px;
+  background: #e7816b;
+  border-radius: 15px;
+  padding: 72px 95px 46px 95px;
+  background-image: url("../../img/talk-oval.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+
+.footer .footer-talk .talk__header {
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.footer .footer-talk .talk__desc {
+  margin: 0;
+  max-width: 459px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #ffffff;
 }
 
 .footer .footer__box {

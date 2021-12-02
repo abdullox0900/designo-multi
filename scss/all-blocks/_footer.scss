@@ -1,6 +1,43 @@
 .footer {
+    position: relative;
     padding: 144px 0px 72px 0px;
     background: #1d1c1e;
+
+    // FOOTER-TALK
+    .footer-talk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: -200px;
+        width: 1111px;
+        background: #e7816b;
+        border-radius: 15px;
+        padding: 72px 95px 46px 95px;
+        background-image: url("../../img/talk-oval.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+
+        .talk__header {
+            margin: 0;
+            margin-bottom: 22px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 40px;
+            color: #ffffff;
+        }
+
+        .talk__desc {
+            margin: 0;
+            max-width: 459px;
+            font-weight: normal;
+            line-height: 26px;
+            color: #ffffff;
+        }
+    }
+
+    // FOOTER-BOX
     .footer__box {
         display: flex;
         align-items: center;
