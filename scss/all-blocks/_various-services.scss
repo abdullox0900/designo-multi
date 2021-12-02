@@ -1,0 +1,48 @@
+.various-services {
+    padding-bottom: 380px;
+
+    .varioust-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .varioust-list__item {
+        margin: 15px;
+        width: 350px;
+        background: #fdf3f0;
+        border-radius: 15px;
+    }
+
+    .varioust-list__img {
+        width: 350px;
+        height: 320px;
+    }
+
+    .varioust-list__wrapper {
+        padding: 32px;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .varioust-list__header {
+        margin: 0;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #e7816b;
+    }
+
+    .varioust-list__desc {
+        margin: 0 auto;
+        font-weight: normal;
+        line-height: 26px;
+        text-align: center;
+        color: #333136;
+    }
+}
