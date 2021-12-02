@@ -1048,4 +1048,37 @@ img {
   line-height: 26px;
   color: #333136;
 }
+
+.hero-designo {
+  padding-bottom: 160px;
+}
+
+.hero-designo .hero-designo__box {
+  padding: 64px 0px;
+  background: #e7816b;
+  border-radius: 15px;
+  background-image: url("../../img/hero-designo-oval.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+
+.hero-designo .hero-designo__header {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-designo .hero-designo__desc {
+  margin: 0 auto;
+  max-width: 388px;
+  font-weight: normal;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
