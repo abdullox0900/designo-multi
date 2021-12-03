@@ -618,23 +618,6 @@ img {
   height: 510px;
 }
 
-.award .award__oval {
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 640px;
-  height: 640px;
-  z-index: -1;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 2, 2, 0.0001)), to(rgba(93, 2, 2, 0.497569)));
-  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
-  mix-blend-mode: normal;
-  opacity: 0.31;
-  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
-          transform: matrix(0, -1, -1, 0, 0, 0);
-}
-
 @media only screen and (max-width: 1090px) {
   .award .award-box {
     padding: 145px 80px 0px 90px;
@@ -643,12 +626,26 @@ img {
 
 @media only screen and (max-width: 965px) {
   .award .award-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 145px 70px 0px 95px;
-    background-position-x: 450px;
+    background-position-x: 200px;
+    background-position-y: 100px;
+  }
+  .award .award-box__wrap {
+    text-align: center;
   }
   .award .award__img {
     top: 169px;
     right: 50px;
+  }
+  .award .award__button {
+    margin-bottom: 69px;
   }
   .award .award__oval {
     right: -100px;
@@ -665,7 +662,6 @@ img {
   .award .award-box {
     padding: 145px 98px 0px 95px;
     text-align: center;
-    background-position-x: 450px;
   }
   .award .award__img {
     top: 45%;
